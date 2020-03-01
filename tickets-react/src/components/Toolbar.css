@@ -1,12 +1,17 @@
-.main {
+.toolbar {
   background-color: #1976d2;
   color: #ffffff;
   padding: 0 20px;
   display: flex;
   justify-content: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
-.content {
+.toolbar .content {
   max-width: 1200px;
   padding: 12px 0;
   font-size: 20px;
@@ -16,16 +21,16 @@
   justify-content: space-between;
 }
 
-.menu {
+.toolbar .menu {
   display: flex;
 }
 
-.menu-item {
+.toolbar .menu-item {
   line-height: 40px;
   margin: 0 32px 0 0;
 }
 
-input {
+.toolbar input {
   /* Color */
   background-color: rgba(255, 255, 255, 0.15);
   color: #ffffff;
@@ -42,7 +47,7 @@ input {
   line-height: 40px;
 }
 
-input::placeholder {
+.toolbar input::placeholder {
   color: #ffffff;
   opacity: 0.6;
 }

@@ -1,0 +1,36 @@
+.homepage {
+  padding: 0 20px;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+.homepage .content {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.homepage .sidebar {
+  background-color: red;
+  flex: 0 0 260px;
+}
+
+.homepage .matches {
+  background-color: blue;
+  flex: 1;
+  min-width: 600px;
+  margin: 0 0 0 20px;
+}
+
+@media screen and (max-width: 919px) {
+  .homepage .sidebar {
+    flex: 1 0 260px;
+  }
+
+  .homepage .matches {
+    margin: 0;
+    min-width: 620px;
+  }
+}

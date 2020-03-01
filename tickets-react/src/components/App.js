@@ -1,11 +1,13 @@
 import React from 'react';
+import './App.css';
 import Toolbar from './Toolbar';
+import Homepage from './Homepage';
 
 const App = () => {
   return (
-    <div>
+    <div className="app">
       <Toolbar />
-      <div>Homepage</div>
+      <Homepage />
     </div>
   );
 };
