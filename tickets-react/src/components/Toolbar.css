@@ -1,0 +1,48 @@
+.main {
+  background-color: #1976d2;
+  color: #ffffff;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  max-width: 1200px;
+  padding: 12px 0;
+  font-size: 20px;
+
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu-item {
+  line-height: 40px;
+  margin: 0 32px 0 0;
+}
+
+input {
+  /* Color */
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+
+  /* Sizing */
+  border: 0;
+  border-radius: 4px;
+  padding: 0 12px;
+  width: 300px;
+  outline: none;
+
+  /* Font */
+  font-size: 16px;
+  line-height: 40px;
+}
+
+input::placeholder {
+  color: #ffffff;
+  opacity: 0.6;
+}
