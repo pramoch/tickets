@@ -1,4 +1,5 @@
 .homepage {
+  margin-top: 64px;
   padding: 0 20px;
   display: flex;
   height: 100%;
@@ -13,12 +14,14 @@
 }
 
 .homepage .sidebar {
-  background-color: red;
+  /* background-color: red; */
+  border: 1px solid black;
   flex: 0 0 260px;
 }
 
 .homepage .matches {
-  background-color: blue;
+  /* background-color: blue; */
+  border: 1px solid black;
   flex: 1;
   min-width: 600px;
   margin: 0 0 0 20px;

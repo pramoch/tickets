@@ -1,5 +1,6 @@
 import React from 'react';
 import './Homepage.css';
+import Matches from './Matches';
 
 const Homepage = () => {
   return (
@@ -9,7 +10,7 @@ const Homepage = () => {
 
         </div>
         <div className="matches">
-
+          <Matches />
         </div>
       </div>
     </div>
