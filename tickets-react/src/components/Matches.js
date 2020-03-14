@@ -1,20 +1,11 @@
 import React from 'react';
 import Match from './Match';
+import { getMatches } from '../actions'
+import { connect } from "react-redux";
 
 class Matches extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      matches: [
-        {
-          title: 'Match 1'
-        },
-        {
-          title: 'Match 2'
-        }
-      ]
-    }
+  componentDidMount() {
+    this.props.getMatches();
   }
 
   render() {
@@ -24,7 +15,7 @@ class Matches extends React.Component {
   }
 
   renderMatches() {
-    return this.state.matches.map((match, index) => {
+    return this.props.matches.map((match, index) => {
       return (
         <Match key={index} title={match.title}/>
       )
@@ -32,4 +23,10 @@ class Matches extends React.Component {
   }
 }
 
-export default Matches;
+const mapStateToProps = state => {
+  return {
+    matches: state.matches
+  }
+}
+
+export default connect(mapStateToProps, { getMatches })(Matches);
