@@ -1,4 +1,5 @@
 import React from 'react';
+import Match from './Match';
 
 class Matches extends React.Component {
   constructor(props) {
@@ -25,7 +26,7 @@ class Matches extends React.Component {
   renderMatches() {
     return this.state.matches.map((match, index) => {
       return (
-        <div key={index}>{match.title}</div>
+        <Match key={index} title={match.title}/>
       )
     });
   }
