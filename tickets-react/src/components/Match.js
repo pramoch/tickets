@@ -1,9 +1,13 @@
 import React from 'react';
+import './Match.css';
 
 class Match extends React.Component {
   render() {
     return (
-      <div>{this.props.title}</div>
+      <div className="match">
+        <div className="title">{this.props.data.title}</div>
+        <div>{this.props.data.stadium}</div>
+      </div>
     )
   }
 }

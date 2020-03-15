@@ -3,8 +3,14 @@ export const getMatches = () => {
     dispatch({
       type: 'GET_MATCHES',
       payload: [
-        { title: 'Match 1'},
-        { title: 'Match 2'}
+        {
+          title: 'Arsenal vs Norwich City',
+          stadium: 'Emirates Stadium'
+        },
+        {
+          title: 'West Ham United vs Chelsea',
+          stadium: 'London Olympic Stadium'
+        }
       ]
     })
   }

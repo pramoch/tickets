@@ -17,7 +17,7 @@ class Matches extends React.Component {
   renderMatches() {
     return this.props.matches.map((match, index) => {
       return (
-        <Match key={index} title={match.title}/>
+        <Match key={index} data={match}/>
       )
     });
   }
