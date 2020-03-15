@@ -25,7 +25,7 @@ class Matches extends React.Component {
 
 const mapStateToProps = state => {
   return {
-    matches: state.matches
+    matches: Object.values(state.matches)
   }
 }
 
