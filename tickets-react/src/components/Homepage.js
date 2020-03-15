@@ -7,7 +7,6 @@ const Homepage = () => {
     <div className="homepage">
       <div className="content">
         <div className="sidebar">
-
         </div>
         <div className="matches">
           <Matches />
