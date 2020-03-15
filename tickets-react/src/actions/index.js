@@ -4,12 +4,12 @@ export const getMatches = () => {
       type: 'GET_MATCHES',
       payload: [
         {
-          id: '001',
+          id: 1,
           title: 'Arsenal vs Norwich City',
           stadium: 'Emirates Stadium'
         },
         {
-          id: '002',
+          id: 2,
           title: 'West Ham United vs Chelsea',
           stadium: 'London Olympic Stadium'
         }

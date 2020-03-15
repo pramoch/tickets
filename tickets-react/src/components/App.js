@@ -17,12 +17,8 @@ const App = () => {
         <Toolbar />
         <div className="content">
           <Switch>
-            <Route path="/match">
-              <MatchDetail />
-            </Route>
-            <Route path="/">
-              <Homepage />
-            </Route>
+            <Route path="/match/:id" component={MatchDetail} />
+            <Route path="/" component={Homepage} />
           </Switch>
         </div>
       </div>
