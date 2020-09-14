@@ -12,7 +12,9 @@ const matches =  [
 ];
 
 export const getMatches = () => {
-  return (dispatch) => {
+  return (dispatch, getState) => {
+    // const stateBefore = getState();
+
     dispatch({
       type: 'GET_MATCHES',
       payload: matches

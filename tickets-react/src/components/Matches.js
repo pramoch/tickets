@@ -5,7 +5,9 @@ import { connect } from "react-redux";
 
 class Matches extends React.Component {
   componentDidMount() {
-    this.props.getMatches();
+    if (this.props.matches.length === 0) {
+      this.props.getMatches();
+    }
   }
 
   render() {
